@@ -1,0 +1,32 @@
+{
+  "name": "array-duplicates",
+  "version": "1.0.0",
+  "description": "Returns the duplicated items found in an array",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/gabmontes/array-duplicates/issues"
+  },
+  "license": "WTFPL",
+  "author": "Gabriel Montes <gabriel@utoctadel.com.ar>",
+  "main": "dist/index.js",
+  "repository": "gabmontes/array-duplicates",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --require babel-polyfill",
+      "coverage": "babel-node --presets latest ./node_modules/istanbul/lib/cli cover node_modules/mocha/bin/_mocha",
+    "build": "babel --presets latest -d dist/ lib/",
+    "prepublish": "npm test && npm run build"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.13.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-latest": "^6.14.0",
+    "babel-preset-latest-minimal": "^1.1.1",
+    "babel-register": "^6.14.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.2"
+  }
+}
