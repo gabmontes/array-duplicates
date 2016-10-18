@@ -1,6 +1,6 @@
-import { expect } from 'chai'
+const { expect } = require('chai')
 
-import duplicates from '../lib'
+const duplicates = require('../lib')
 
 describe('Duplicates', function () {
   it('should return none for []', function () {
